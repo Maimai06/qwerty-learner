@@ -43,21 +43,21 @@ const Footer: React.FC = () => {
     <>
       <InfoPanel
         openState={infoPanelState.donate}
-        title="Buy us a coffee"
+        title="Buy them a coffee"
         icon={IconCoffee}
         buttonClassName="bg-amber-500 hover:bg-amber-400"
         iconClassName="text-amber-500 bg-amber-100 dark:text-amber-300 dark:bg-amber-500"
         onClose={() => handleCloseInfoPanel('donate')}
       >
         <p className="text-sm text-gray-500 dark:text-gray-300">
-          非常感谢大家使用 Qwerty Learner，目前该网站使用业余时间在维护，为了保证网站能够持续地提供给大家高质量的服务，我们需要您的帮助！
+          非常感谢大家使用 Qwerty Learner，该网站是git了源码仓库进行部署的，为了让开发者们更加有动力地去完善这个项目，他们需要您的帮助
           <br />
-          您的捐款将有助于我们支付网站的运营成本，改进网站的功能和设计，并提高用户体验。
+          您的捐款将有助于，改进网站的功能和设计，并提高用户体验。
           <br />
         </p>
         <br />
         <p className="text-sm text-gray-700 dark:text-gray-200">
-          我们相信，共同的努力可以让 Qwerty Learner 成为更好的学习平台，也相信您的支持将给予我们持续前进的动力。 感谢您的支持！
+          我们相信，共同的努力可以让 Qwerty Learner 成为更好的学习平台，也相信您的支持将给予开发者们持续前进的动力。 感谢您的支持！
         </p>
         <br />
         <div className="flex w-full justify-start">
@@ -115,6 +115,10 @@ const Footer: React.FC = () => {
       </InfoPanel>
 
       <footer className="mb-1 mt-4 flex w-full items-center justify-center gap-2.5 text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
+      <a href="https://github.com/Maimai06" target="_blank" rel="noreferrer" aria-label="前往 我的GitHub 主页">
+          <IconGithub fontSize={15} className="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100" />
+        </a>
+
         <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" aria-label="前往 GitHub 项目主页">
           <IconGithub fontSize={15} className="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100" />
         </a>
